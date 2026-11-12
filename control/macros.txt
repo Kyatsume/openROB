@@ -1,0 +1,16 @@
+automacro respawn_healer {
+    console /You are no longer: Dead/i
+    location payon 98 113
+    weight < 90%
+    run-once 1
+    call heal_at_payon
+}
+
+macro heal_at_payon {
+    do ai manual
+    pause 1
+    do talknpc 100 116 c
+    pause 1
+    do ai on
+    release respawn_healer
+}

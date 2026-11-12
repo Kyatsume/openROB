@@ -15,8 +15,7 @@ if [ -z "${PREFIX:-}" ] || [ ! -d "$PREFIX" ]; then
 fi
 
 echo "[1/5] Updating Termux packages..."
-pkg update -y
-pkg upgrade -y
+
 
 echo
 echo "[2/5] Installing Node.js and tmux..."
