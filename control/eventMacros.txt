@@ -1,0 +1,14 @@
+automacro death_healer {
+    SimpleHookEvent self_died
+    exclusive 1
+    call {
+        pause 3
+        # If overweight, wait for storage to finish first
+        while (@weight(90) == 1) {
+            pause 2
+        }
+        pause 2
+        do talknpc 100 116 c
+        release death_healer
+    }
+}
