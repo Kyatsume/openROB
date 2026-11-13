@@ -1,16 +1,19 @@
-automacro respawn_healer {
-    console /You are no longer: Dead/i
-    location payon 98 113
-    weight < 90%
-    run-once 1
-    call heal_at_payon
+automacro talk_healer_visible {
+    location payon
+    hp < 30%
+    call heal_sequence
 }
 
-macro heal_at_payon {
+macro heal_sequence {
+    $healer = @npc (100 116)
+    if ($healer == -1) goto end
+
     do ai manual
     pause 1
-    do talknpc 100 116 c
+    do talknpc 100 116
     pause 1
     do ai on
-    release respawn_healer
+
+    :end
+    release talk_healer_visible
 }
