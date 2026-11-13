@@ -8,7 +8,7 @@ automacro talk_healer_visible {
 macro heal_sequence {
     do ai manual
     pause 1
-    do talknpc 100 116 c
+    do talknpc Healer
     pause 1
     do ai on
     release talk_healer_visible

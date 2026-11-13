@@ -310,7 +310,7 @@ skillsAddAuto_list
 tankMode 0
 tankModeTarget
 
-teleportAuto_hp 10
+teleportAuto_hp 0
 teleportAuto_sp 0
 teleportAuto_idle 0
 teleportAuto_portal 0
@@ -318,10 +318,10 @@ teleportAuto_search 0
 teleportAuto_minAggressives 0
 teleportAuto_minAggressivesInLock 0
 teleportAuto_onlyWhenSafe 0
-teleportAuto_maxDmg 500
+teleportAuto_maxDmg 20000
 teleportAuto_maxDmgInLock 0
-teleportAuto_deadly 1
-teleportAuto_useSkill 1
+teleportAuto_deadly 0
+teleportAuto_useSkill 0
 teleportAuto_useChatCommand
 teleportAuto_allPlayers 0
 teleportAuto_notPlayers
